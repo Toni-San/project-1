@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color: #9da6b5;
+	margin: 0;
+	padding: 0;
+	font-family: "Myriad Pro", sans-serif;
+}
+.all {
+	width: 999px;
+	margin: auto; /*почему это так?*/
+	background-color: #fff;
+}
+.first-block {
+	background-image: url(../images/img1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.headers-1 {
+	width: 365px;
+	float: left;
+	margin-top: 32px;
+	margin-right: 37px;
+	margin-bottom: 32px;
+	margin-left: 20px;
+	font-weight: 100;
+}
+.logo-img-1 {
+	width: 155px;
+	height: 154px;
+	float: left;
+}
+.meny {
+	margin: 0;
+	padding: 0;
+	background-color: rgba(85,85,85,0.30);
+	clear: both
+}
+.meny li {
+	float: left;
+	list-style-type: none;
+	margin-right: 1em; /*как вывести меню по центру?*/
+}
+.clear::after, .clear::before {
+	content: '';
+	display: table;
+	clear: both;
+}
+/*.clear::after {
+	clear: both;
+}
+ul::before {
+	clear: both;
+}*/
+li a {
+	text-decoration: none;
+	color: #FFFFFF;
+	display: block;
+	padding: 5px;
+}
+.headers-2 {
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-left: 4px;
+	padding-right: 4px;
+	color: #2F2F2F;
+	font-weight: 400;
+}
+.subblock {
+	width: 687px;
+	margin: 15px auto 45px auto;
+	padding: 1px;
+	border: solid 11px hsla(0,0%,90%,1.00);
+	border-radius: 10px;
+}
+.subblock img {
+	width: 148px;
+	float: left;
+	margin-right: 1.5em;
+}
+.subblock:nth-of-type(2n) img {
+	float: right;
+	margin-right: 0;
+	margin-left: 1.5em;
+}
+.subblock .content-card {
+	float: left;
+	width: 505px;
+    height: 204px;
+    overflow: auto;
+}
+.subblock:nth-of-type(2n) .content-card {
+	margin-left: 10px;
+}
+/*это таблца?*/
+.third-block {
+	background-color: #141517;
+	width: 999px;
+	height: 68px;
+}
+.address-block {
+	float: left;
+	width: 333px;
+	margin: auto;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	color: #fff;
+	text-align: center;
+}
+.telephone-number-block {
+	float: left;
+	width: 333px;
+	margin: auto;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	color: #fff;
+	text-align: center;
+}
+.e-mail-block {
+	float: left;
+	width: 333px;
+	margin: auto;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	color: #fff;
+	text-align: center;
+}
+.subblock h3 {
+	color: #686868;
+	border-bottom: 1px solid #333;
+	border-bottom-color: #686868;
+	padding-bottom: 15px;
+}
+
+.form {
+	float: right;
+	margin-top: 30px;
+	margin-right: 50px;
+	color: #FFFFFF;
+}
+
+.input {
+	border: 0;
+	border-radius: 5px;
+	width: 190px;
+	height: 30px; /*почему width и height он режет на 2 px меньше*/
+}
